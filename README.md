@@ -1,6 +1,6 @@
 # Superstore Data Analysis Flask App
 
-This is a web application for analyzing the Superstore dataset, built using Flask and Pandas. The application allows users to filter the dataset based on various categories and run predefined queries, presenting the results in a user-friendly format.
+This is a web application for analyzing a superstore's inventory dataset, built using Flask and Pandas. The application allows users to filter the dataset based on various categories and run predefined queries, presenting the results in a user-friendly format. It uses data that was provided in class. 
 
 ## Features
 
@@ -44,21 +44,27 @@ my_flask_app/
    git clone <repository-url>
    cd my_flask_app
    ```
-
-2. **Install Dependencies**: Install the required Python libraries using pip.
-   ```bash
-   pip install flask pandas
-   ```
+   **OR**
+  Download the ZIP, then extract to a `my_flask_app` folder.
 
 3. **Open Project in VSCode**:
    - Open VSCode and use the "Open Folder" option to open the `my_flask_app` directory.
+   - Open the command palette to create a venv.
+   - Select the Python 3.7+ interpreter. 
    - Make sure you have the Python extension installed in VSCode for better development experience.
 
-4. **Create Project Structure**: Ensure your project files are organized as follows:
+4. **Verify Project Structure**: Ensure your project files are organized as follows:
    - `app.py`: The main Flask application.
    - `templates/index.html`: HTML template for rendering the interface.
    - `static/style.css`: CSS file to enhance the look and feel.
    - `data/superstore_sales.csv`: The dataset file.
+
+5. **Install Dependencies**:
+   - Open the terminal in VSCode (`Ctrl + \` or View > Terminal).
+   - Run the following:
+     ```bash
+     pip install flask pandas
+     ```
 
 5. **Run the Application**:
    - Open the terminal in VSCode (`Ctrl + \` or View > Terminal).
@@ -66,6 +72,8 @@ my_flask_app/
      ```bash
      python app.py
      ```
+     **OR**
+     Run the project with the IDE debugger.
 
 6. **Access the Application**:
    - Open your web browser and go to `http://127.0.0.1:5000` to see the application.
@@ -77,25 +85,23 @@ my_flask_app/
 3. **Run Query**: Click on the "Run Query" button to get results based on your selected filters and query.
 4. **Reset Filters**: Click on the "Reset" button to clear all selections and start over.
 
-## Notes
+## Notable Features
 
 - The application includes input validation to ensure that conflicting selections are not allowed (e.g., selecting a Sub-Category that doesn't match the selected Category).
 - Flash messages are used to provide feedback to users when a conflicting selection occurs.
-
-## Example Screenshots
-
-You can add screenshots here to show what the application looks like.
+- Display type adjusts automatically for user readability depending on data type. 
 
 ## Troubleshooting
 
 - If the Flask server does not start, make sure you are in the correct folder and have installed all dependencies.
+- Ensure that Python 3.7+ is being used. 
 - Use VSCode's built-in debugger to add breakpoints in `app.py` if you need to troubleshoot any errors.
 
 ## Contributing
 
-Feel free to submit issues or contribute to the project by creating pull requests.
+I will not continue to support this project, so no new pull requests will be mereged. However feel free to fork it or use it as a template to build upon. 
 
 ## License
 
-This project is licensed under the MIT License.
+This is a school project that I decided to go deeper on, it is licensed under the MIT License.
 
