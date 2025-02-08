@@ -1,3 +1,5 @@
+Final Project for 110a
+
 # Superstore Data Analysis Flask App
 
 This is a web application for analyzing a superstore's inventory dataset, built using Flask and Pandas. The application allows users to filter the dataset based on various categories and run predefined queries, presenting the results in a user-friendly format. It uses data that was provided in class. 
